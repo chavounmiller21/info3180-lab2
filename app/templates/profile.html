@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+<html>
+    {% block main %}
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <div class = "main">
+            <img src = "{{url_for('static', filename='profilepic.jpg')}}">
+            <h1> Chavoun Miller</h1>
+            <h5>@cmiller <br> Kingston, Jamaica <br> {{ format_date_joined}}</h5>
+        </div>
+        <p class = "aboutme"> I aspire to be very wealthy so wealthy that I do not know what to do with money</p>
+
+        <table>
+            <tr>
+                <th>7</th>
+                <th>100</th>
+                <th>250</th>
+            </tr>
+            <tr>
+                <td>Posts</td>
+                <td>Following</td>
+                <td>Followers</td>  
+            </tr>
+        </table>
+        <button>Follow</button>
+    
+    </body>
+    {% endblock %}
+</html>
